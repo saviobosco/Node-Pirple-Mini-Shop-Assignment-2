@@ -1,0 +1,47 @@
+<h1>Checkout </h1>
+<h2> One time checkout </h2>
+
+<div class="clearfix">
+    <div style="float: left;">
+      <table id="cartsListTable">
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+      
+      </table>
+    </div>
+    <div style="float: left;">
+            <div class="formWrapper">
+                    <form id="checkoutCreate" action="/api/checkout" method="POST">
+                        <div class="formError"></div>
+                        <div class="inputWrapper">
+                          <div class="inputLabel">Full Name</div>
+                          <input type="text" name="card_name" placeholder="John" />
+                        </div>
+                        <div class="inputWrapper">
+                          <div class="inputLabel"> Card Number </div>
+                          <input type="text" name="card_number" placeholder="Eg. 4242424242424242" />
+                        </div>
+                        <div class="inputWrapper">
+                          <div class="inputLabel"> Card Expiration Month </div>
+                          <input type="text" name="card_exp_month" placeholder="MM" />
+                        </div>
+                        <div class="inputWrapper">
+                            <div class="inputLabel"> Card Expiration Year </div>
+                            <input type="text" name="card_exp_year" placeholder="YYYY" />
+                          </div>
+                        <div class="inputWrapper">
+                          <div class="inputLabel"> CVC </div>
+                          <input type="text" name="card_cvc" placeholder="CVC" />
+                        </div>
+                        
+                        <div class="inputWrapper ctaWrapper">
+                          <button type="submit" class="cta blue"> Pay </button>
+                        </div>
+                      </form>
+                </div>
+    </div>
+</div>
